@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mall of Asia</title>
+  <style>
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      line-height: 1.6;
+    }
+
+    /* Header Styling */
+    header {
+      background-color: #0044cc;
+      color: #fff;
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    header h1 {
+      font-size: 3em;
+    }
+
+    nav ul {
+      list-style-type: none;
+      padding: 10px 0;
+    }
+
+    nav ul li {
+      display: inline;
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-size: 1.2em;
+    }
+
+    nav ul li a:hover {
+      text-decoration: underline;
+    }
+
+    /* Section Styling */
+    section {
+      margin: 20px;
+      padding: 20px;
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      display: none;
+    }
+
+    section.active {
+      display: block;
+    }
+
+    section h2 {
+      color: #0044cc;
+      font-size: 2em;
+      margin-bottom: 15px;
+    }
+
+    section p, section ul {
+      font-size: 1.1em;
+    }
+
+    /* Facilities List */
+    ul {
+      list-style-type: square;
+      padding-left: 20px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px 0;
+      background-color: #333;
+      color: white;
+    }
+
+    footer p {
+      font-size: 1.1em;
+    }
+
+    /* Image Styling */
+    .img-container {
+      display: flex;
+      justify-content: space-around;
+      margin: 20px 0;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .img-container img {
+      width: 300px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    /* Home Image Section */
+    .home-images {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .home-images img {
+      width: 350px;
+      height: 250px;
+      border-radius: 10px;
+    }
+
+    /* About Text Styling */
+    .home-text {
+      font-size: 1.2em;
+      line-height: 1.8em;
+      text-align: justify;
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Mall of Asia</h1>
+    <nav>
+      <ul>
+        <li><a href="javascript:void(0);" onclick="showPage('home')">Home</a></li>
+        <li><a href="javascript:void(0);" onclick="showPage('about')">About</a></li>
+        <li><a href="javascript:void(0);" onclick="showPage('facilities')">Facilities</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Home Section (Main Introduction) -->
+  <section id="home" class="active">
+    <h2>Welcome to Mall of Asia</h2>
+    <div class="home-text">
+      <p>The Mall of Asia (MOA) is one of the largest shopping malls in the Philippines, located in Pasay City. Opened in 2006, it has become an iconic destination for shopping, dining, and entertainment, attracting millions of visitors every year. With over 600 retail stores, numerous restaurants, and world-class entertainment venues, MOA has something for everyone.</p>
+
+      <p>Whether you are looking for the latest fashion trends, enjoying a family meal, or watching a blockbuster movie, Mall of Asia is the place to be. The mall also offers various leisure activities, including ice skating, an amusement park, and a sprawling outdoor space by the Manila Bay, perfect for a relaxing stroll while enjoying the beautiful sunset.</p>
+
+      <p>In addition, MOA hosts regular events, concerts, and festivals, making it a lively hub of activity throughout the year. It truly is a must-visit destination for both locals and tourists.</p>
+    </div>
+
+    <!-- Images of Mall of Asia -->
+    <div class="home-images">
+      <img src="mall1.jpg" alt="Mall of Asia Exterior">
+      <img src="mall2.jpg" alt="Mall of Asia Interior">
+      <img src="mall3.jpg" alt="Mall of Asia Sunset">
+    </div>
+
+    <h2>Explore the Mall of Asia</h2>
+    <div class="home-text">
+      <p>Experience the excitement and energy that come with a visit to Mall of Asia. Whether you are here for shopping, food, or entertainment, MOA promises a fun-filled day. Enjoy the various amenities that cater to everyone—from families to solo travelers.</p>
+
+      <p>Here are some key attractions you can enjoy:</p>
+      <ul>
+        <li>Over 600 retail stores and boutiques</li>
+        <li>World-class restaurants, cafes, and fast food outlets</li>
+        <li>State-of-the-art cinemas and entertainment venues</li>
+        <li>An indoor ice skating rink</li>
+        <li>A beautiful seaside promenade and sunset view</li>
+        <li>An amusement park with thrilling rides</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Mall of Asia</h2>
+    <p>The Mall of Asia (MOA) is a landmark destination in the Philippines, offering a wide variety of shopping, dining, and entertainment options. It's the ultimate place for family fun and leisure activities.</p>
+    
+    <!-- Images of Mall of Asia -->
+    <div class="img-container">
+      <img src="mall1.jpg" alt="Mall of Asia Exterior">
+      <img src="mall2.jpg" alt="Mall of Asia Interior">
+      <img src="mall3.jpg" alt="Mall of Asia Sunset">
+    </div>
+  </section>
+
+  <!-- Facilities Section -->
+  <section id="facilities">
+    <h2>Facilities</h2>
+    <ul>
+      <li>Shopping Stores</li>
+      <li>Restaurants and Cafes</li>
+      <li>Cinemas</li>
+      <li>Ice Skating Rink</li>
+      <li>Amusement Park</li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Mall of Asia. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Function to switch between pages
+    function showPage(page) {
+      // Hide all sections
+      var sections = document.querySelectorAll('section');
+      sections.forEach(function(section) {
+        section.classList.remove('active');
+      });
+
+      // Show the selected page
+      var selectedPage = document.getElementById(page);
+      selectedPage.classList.add('active');
+    }
+  </script>
+</body>
+</html>
